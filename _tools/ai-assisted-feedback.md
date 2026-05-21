@@ -8,9 +8,9 @@ link: https://example.com/ai-feedback
 featured: true
 accent: "#008bb2"
 features:
-  - Get personalised feedback from your AI-equivalent supervisor
+  - Get feedback that aligns with your supervisor's preferences
   - No more waiting for busy supervisors
-  - No generic AI analysis
+  - Built-in study curriculum alignment
 order: 1
 ---
 

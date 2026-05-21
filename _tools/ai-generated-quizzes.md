@@ -9,7 +9,8 @@ featured: true
 accent: "#4406e0"
 features:
   - Test your knowledge with AI-generated quizzes
-  - Quizzes are trained on your course material
+  - Quizzes are adapted to your specific course material
+  - Efficient to test knowledge before exam
 order: 2
 ---
 
