@@ -2,7 +2,7 @@
 layout: default
 title: AI-Generated Quizzes on Course Material
 icon: "🗪"
-tagline: Turn any text into a quiz in seconds
+tagline: Test yourself on the course material
 github_path: project-AI-generated-quizzes
 link: https://example.com/ai-quizzes
 featured: true
