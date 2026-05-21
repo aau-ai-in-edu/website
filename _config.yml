@@ -1,7 +1,7 @@
 title: AI in Education
 description: Tools for AI in education
-baseurl: ""
-url: ""
+baseurl: "/website"
+url: "https://aau-ai-in-edu.github.io"
 github_url: https://github.com/jakobhaervig/ai-in-edu
 
 # Site copy
