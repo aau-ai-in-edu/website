@@ -1,0 +1,107 @@
+---
+layout: default
+title: AI in Education
+description: Open-source AI tools that enhance learning and teaching experiences
+---
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-badge">{{ site.hero.badge }}</span>
+            {% assign hp = site.hero.headline | split: "*" %}
+            <h1>
+                {{ hp[0] }}<span class="gradient-text">{{ hp[1] }}</span>{{
+                hp[2] }}
+            </h1>
+            <p class="hero-lead">{{ site.hero.lead }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tools -->
+<section class="tools" id="tools">
+    <div class="container">
+        <div class="section-header">
+            <h2>{{ site.tools_section.headline }}</h2>
+            <p>{{ site.tools_section.lead }}</p>
+        </div>
+        <div class="tools-grid">
+            {% assign sorted_tools = site.tools | sort: "order" %} {% for tool
+            in sorted_tools %}
+            <div
+                class="tool-card{% if tool.featured %} featured{% endif %}"
+                style="border-top-color: {{ tool.accent }};"
+            >
+                {% if tool.featured %}
+                <div
+                    class="featured-label"
+                    style="background: {{ tool.accent }};"
+                >
+                    ⭐ Featured
+                </div>
+                {% endif %}
+                <div class="tool-icon">{{ tool.icon }}</div>
+                <h3>{{ tool.title }}</h3>
+                <p>{{ tool.tagline }}</p>
+                <ul class="tool-features">
+                    {% for feature in tool.features %}
+                    <li style="--accent: {{ tool.accent }};">{{ feature }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="tool-footer">
+                    <a
+                        href="{{ tool.link }}"
+                        class="btn btn-sm"
+                        style="background: {{ tool.accent }}; border-color: {{ tool.accent }}; color: #fff;"
+                        target="_blank"
+                        rel="noopener"
+                        >Open tool →</a
+                    >
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="more-info" id="more-information">
+    <div class="container">
+        <div class="more-info-grid">
+            <div class="more-info-text">
+                <h2>{{ site.about.headline }}</h2>
+                <p>{{ site.about.body }}</p>
+                <a
+                    href="{{ site.github_url }}"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener"
+                    >Get Started on GitHub</a
+                >
+            </div>
+            <div class="more-info-stats">
+                {% for stat in site.about.stats %}
+                <div class="stat">
+                    <span class="stat-number">{{ stat.number }}</span>
+                    <span class="stat-label">{{ stat.label }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2>{{ site.cta.headline }}</h2>
+        <p>{{ site.cta.body }}</p>
+        <a
+            href="mailto:jah@energy.aau.dk"
+            class="btn btn-lg"
+            style="background: #fff; color: var(--aau-navy); border-color: #fff"
+            >Get in touch →</a
+        >
+    </div>
+</section>

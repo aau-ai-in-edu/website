@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<!-- Tool hero -->
+<section class="tool-hero">
+    <div class="container">
+        <a href="{{ '/' | relative_url }}#tools" class="tool-back"
+            >← All tools</a
+        >
+        <div class="tool-hero-heading">
+            <span class="tool-hero-icon">{{ page.icon }}</span>
+            <div>
+                <h1>{{ page.title }}</h1>
+                <p class="tool-hero-tagline">{{ page.tagline }}</p>
+            </div>
+        </div>
+        <div class="tool-hero-actions">
+            <a
+                href="{{ site.github_url }}/tree/main/{{ page.github_path }}"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+            >
+        </div>
+    </div>
+</section>
+
+<!-- Feature pills -->
+<section class="tool-features-bar">
+    <div class="container">
+        <ul class="tool-feature-pills">
+            {% for feature in page.features %}
+            <li>✓ {{ feature }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<!-- Markdown content -->
+<section class="tool-content">
+    <div class="container">
+        <div class="prose">{{ content }}</div>
+    </div>
+</section>

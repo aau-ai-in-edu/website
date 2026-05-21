@@ -1,0 +1,19 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Gemfile.lock (let GitHub Pages manage its own)
+Gemfile.lock
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
