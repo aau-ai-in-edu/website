@@ -47,6 +47,7 @@ description: Open-source AI tools that enhance learning and teaching experiences
                     {% endfor %}
                 </ul>
                 <div class="tool-footer">
+                    {% if tool.live %}
                     <a
                         href="{{ tool.link }}"
                         class="btn btn-sm"
@@ -55,6 +56,9 @@ description: Open-source AI tools that enhance learning and teaching experiences
                         rel="noopener"
                         >Open tool →</a
                     >
+                    {% else %}
+                    <span class="btn btn-sm btn-disabled">Open tool →</span>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
