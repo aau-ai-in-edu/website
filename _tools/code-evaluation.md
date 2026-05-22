@@ -5,7 +5,7 @@ icon: "💻"
 tagline: Instant, actionable code feedback
 github_path: project-code-evaluation
 link: https://example.com/code-evaluation
-featured: true
+live: false
 accent: "#0e8563"
 features:
   - Style and correctness checks

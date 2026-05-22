@@ -5,7 +5,7 @@ icon: "🗪"
 tagline: Test yourself on the course material
 github_path: project-AI-generated-quizzes
 link: https://example.com/ai-quizzes
-featured: true
+live: false
 accent: "#4406e0"
 features:
   - Test your knowledge with AI-generated quizzes

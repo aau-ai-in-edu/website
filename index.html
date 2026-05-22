@@ -30,17 +30,14 @@ description: Open-source AI tools that enhance learning and teaching experiences
             {% assign sorted_tools = site.tools | sort: "order" %} {% for tool
             in sorted_tools %}
             <div
-                class="tool-card{% if tool.featured %} featured{% endif %}"
+                class="tool-card{% if tool.live %} live{% else %} not-live{% endif %}"
                 style="border-top-color: {{ tool.accent }};"
             >
-                {% if tool.featured %}
                 <div
-                    class="featured-label"
-                    style="background: {{ tool.accent }};"
+                    class="status-label {% if tool.live %}status-live{% else %}status-not-live{% endif %}"
                 >
-                    ⭐ Featured
+                    {% if tool.live %}🟢 Live{% else %}🔴 Not live{% endif %}
                 </div>
-                {% endif %}
                 <div class="tool-icon">{{ tool.icon }}</div>
                 <h3>{{ tool.title }}</h3>
                 <p>{{ tool.tagline }}</p>

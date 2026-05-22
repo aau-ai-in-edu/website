@@ -5,7 +5,7 @@ icon: "📝"
 tagline: Feedback from your AI-equivalent supervisor in minutes
 github_path: project-AI-assisted-feedback
 link: https://example.com/ai-feedback
-featured: true
+live: false
 accent: "#008bb2"
 features:
   - Fully compliant with your supervisor's feedback guidelines
