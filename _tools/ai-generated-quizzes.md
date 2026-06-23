@@ -3,8 +3,8 @@ layout: default
 title: Test your knowledge with quizzes on course material
 icon: "🗪"
 tagline: Speak to a AI-equivalent teacher about the course material and receive personalised feedback
-github_path: project-personalised-quizzes
-link: https://example.com/project-personalised-quizzes
+github_path: ai-generated-quizzes
+link: https://example.com/ai-generated-quizzes
 live: false
 accent: "#4406e0"
 features:

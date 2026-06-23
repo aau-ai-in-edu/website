@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Feedback on Report
+title: Get feedback on Report
 icon: "📝"
 tagline: Feedback from in minutes that aligns with your supervisor's preferences
-github_path: project-feedback-on-report
-link: https://example.com/project-feedback-on-report
+github_path: ai-report-feedback
+link: https://example.com/ai-report-feedback
 live: false
 accent: "#008bb2"
 features:
