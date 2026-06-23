@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Get feedback on Report
+title: Get feedback on report
 icon: "📝"
 tagline: Feedback from in minutes that aligns with your supervisor's preferences
 github_path: ai-report-feedback
