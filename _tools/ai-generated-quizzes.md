@@ -1,28 +1,15 @@
 ---
 layout: default
-title: AI-Generated Quizzes on Course Material
+title: Test your knowledge with quizzes on course material
 icon: "🗪"
-tagline: Test yourself on the course material
-github_path: project-AI-generated-quizzes
-link: https://example.com/ai-quizzes
+tagline: Speak to a AI-equivalent teacher about the course material and receive personalised feedback
+github_path: project-personalised-quizzes
+link: https://example.com/project-personalised-quizzes
 live: false
 accent: "#4406e0"
 features:
-  - Test your knowledge with AI-generated quizzes
-  - Quizzes are adapted to your specific course material
-  - Excellent way to test understanding before exam
+  - Speak to an AI-equivalent teacher about the course material and receive personalised feedback on answers
+  - Quizzes are adapted to your specific course material and study curriculum
+  - Locally-hosted at AAU to ensure confidential data stays confidential 
 order: 2
 ---
-
-Turn lecture notes, slides, or textbook excerpts into ready-to-use quizzes in seconds.
-Multiple formats supported — multiple choice, true/false, short answer.
-
-## How it works
-
-1. Paste or upload your source material
-2. Choose question types and difficulty level
-3. Export directly to your LMS
-
-## Getting started
-
-Clone the repository and follow the setup guide in the project README.
