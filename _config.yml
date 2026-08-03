@@ -6,32 +6,26 @@ github_url: https://github.com/jakobhaervig/ai-in-edu
 
 # Site copy
 hero:
-  badge: "Free access for AAU Energy students · Locally hosted at Aalborg University"
+  badge: "Free access for AAU Energy students · AI tools hosted locally at Aalborg University"
   headline: "AI in *Education* at AAU Energy"
   lead:
 
 tools_section:
-  headline: Our collection of AI-powered tools for education
+  headline: AI for AAU Energy students
   lead: >
-    Browse our collection of tools designed to help you practice difficult material, challenge your understanding and write better reports with feedback from our AI supervisors.
+    Get an overview of AI tools and workshops available for AAU Energy students.
 
 about:
   headline: Why AI in Education?
   body: >
-    Educators spend hours every week on repetitive tasks — writing the same feedback,
-    creating similar questions, reviewing boilerplate code. These tools free up that time
-    so teachers can focus on what matters: meaningful interaction with students.
-    All tools are open-source, privacy-respecting, and designed to work alongside
-    existing learning management systems.
+    This site serves as an entry point for all tools and workshops related to AI for AAU Energy students.
   stats:
-    - number: "2"
+    - number: "3"
       label: Tools and counting
-    - number: "2"
+    - number: "0"
       label: Supervisors available for AI-assisted feedback
     - number: "100%"
       label: Locally hosted at Aalborg University
-    - number: "∞"
-      label: Free for AAU Energy students
 cta:
   headline: Got an idea for a new tool?
   body: Get in touch and suggest your idea. We're always looking for new tools to add to our collection.

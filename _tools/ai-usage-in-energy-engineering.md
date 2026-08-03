@@ -2,13 +2,14 @@
 layout: default
 title: Workshop on AI for coding
 icon: "✨"
-tagline: Introductory workshop to AI and LLMs at AAU Energy. We will walk through setting it up in a MATLAB and Python context. Also, you will get access to our local LLM models, which is important if your work includes classified confidential information.
+tagline: Introductory workshop to AI and LLMs for students studying at AAU Energy. We will walk through setting up Matlab and Python to connect with state-of-the-art LLM models. Also, you will get access to the LLM models hosted at AAU Energy, which is important if your work includes confidential information.
 github_path: ai-introduction
 link: https://example.com/ai-introduction
 live: false
 accent: "#cc445b"
 features:
-  - Learn how to connect your tools to external Large Language Models (LLM)
-  - Get access to the latest open-models hosted locally at AAU Energy
+  - Work efficient with AI in your project work
+  - Connect Matlab/Python using API to various state-of-the-art LLM models
+  - Get access the latest open-models hosted locally at AAU Energy
 order: 2
 ---
