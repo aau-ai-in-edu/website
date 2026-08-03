@@ -22,8 +22,8 @@ about:
   stats:
     - number: "3"
       label: Tools and counting
-    - number: "0"
-      label: Supervisors available for AI-assisted feedback
+    - number: "1"
+      label: Supervisors provided specialised reviewing styles
     - number: "100%"
       label: Locally hosted at Aalborg University
 cta:
