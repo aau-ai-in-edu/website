@@ -33,11 +33,13 @@ description: Open-source AI tools that enhance learning and teaching experiences
                 class="tool-card{% if tool.live %} live{% else %} not-live{% endif %}"
                 style="border-top-color: {{ tool.accent }};"
             >
+                {% unless tool.type == "workshop" %}
                 <div
                     class="status-label {% if tool.live %}status-live{% else %}status-not-live{% endif %}"
                 >
                     {% if tool.live %}🟢 Live{% else %}🔴 Not live{% endif %}
                 </div>
+                {% endunless %}
                 <div class="tool-icon">{{ tool.icon }}</div>
                 <h3>{{ tool.title }}</h3>
                 <p>{{ tool.tagline }}</p>
@@ -54,10 +56,12 @@ description: Open-source AI tools that enhance learning and teaching experiences
                         style="background: {{ tool.accent }}; border-color: {{ tool.accent }}; color: #fff;"
                         target="_blank"
                         rel="noopener"
-                        >Access tool →</a
+                        >{% if tool.type == "workshop" %}Register for next workshop →{% else %}Access tool →{% endif %}</a
                     >
                     {% else %}
-                    <span class="btn btn-sm btn-disabled">Open tool →</span>
+                    <span class="btn btn-sm btn-disabled"
+                        >{% if tool.type == "workshop" %}Register for next workshop →{% else %}Open tool →{% endif %}</span
+                    >
                     {% endif %}
                 </div>
             </div>
