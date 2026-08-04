@@ -53,7 +53,7 @@ description: Open-source AI tools that enhance learning and teaching experiences
                     <a
                         href="{{ tool.link }}"
                         class="btn btn-sm"
-                        style="background: {{ tool.accent }}; border-color: {{ tool.accent }}; color: #fff;"
+                        style="{% if tool.type == 'workshop' %}background: var(--aau-petroleum); border-color: var(--aau-petroleum);{% else %}background: {{ tool.accent }}; border-color: {{ tool.accent }};{% endif %} color: #fff;"
                         target="_blank"
                         rel="noopener"
                         >{% if tool.type == "workshop" %}Register for next workshop →{% else %}Access tool →{% endif %}</a

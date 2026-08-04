@@ -6,7 +6,7 @@ tagline: Speak to a AI-equivalent teacher about the course material and receive 
 github_path: ai-generated-quizzes
 link: https://example.com/ai-generated-quizzes
 live: false
-accent: "#0e8563"
+accent: "#a78bff"
 features:
   - Speak to an AI-equivalent teacher about the course material and receive personalised feedback on answers
   - Quizzes are adapted to your specific course material and study curriculum
