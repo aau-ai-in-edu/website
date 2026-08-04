@@ -6,7 +6,7 @@ tagline: Feedback from in minutes that aligns with your supervisor's preferences
 github_path: ai-report-feedback
 link: https://example.com/ai-report-feedback
 live: false
-accent: "#a78bff"
+accent: "#4406e0"
 features:
   - Knows your supervisor's preferences and your study curriculum
   - Includes field-specific feedback

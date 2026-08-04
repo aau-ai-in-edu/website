@@ -7,7 +7,7 @@ tagline: Introductory workshop to AI and LLMs for students studying at AAU Energ
 github_path: ai-introduction
 link: https://www.moodle.aau.dk/course/view.php?id=61554
 live: true
-accent: "#a78bff"
+accent: "#4406e0"
 features:
   - Work efficient with AI in your project work
   - Connect Matlab/Python using API to various state-of-the-art LLM models
