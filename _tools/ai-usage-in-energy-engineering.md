@@ -1,16 +1,18 @@
 ---
 layout: default
-title: Workshop on AI for coding
+title: Practical Workshop on AI
 type: workshop
 icon: "✨"
-tagline: Introductory workshop to AI and LLMs for students studying at AAU Energy. We will walk through setting up Matlab and Python to connect with state-of-the-art LLM models. Also, you will get access to the LLM models hosted at AAU Energy, which is important if your work includes confidential information.
+tagline: Introductory workshop to AI and LLMs. We will do a practical walkthrough on setting up AI for daily use. Also, you will get access to the LLM models hosted at AAU Energy.
 github_path: ai-introduction
 link: https://www.moodle.aau.dk/course/view.php?id=61554
 live: true
 accent: "#4406e0"
 features:
-  - Work efficient with AI in your project work
-  - Connect Matlab/Python using API to various state-of-the-art LLM models
-  - Get access the latest open-models hosted locally at AAU Energy
+  - Open-weight vs closed-weight models and why it matters
+  - An update on the current LLM landscape
+  - Practical walkthrough on setting up your own specialised LLM locally
+  - Connect programs Matlab/Python to your local LLM (or state-of-the-art LLM models hosted externally)
+  - Learn how to access the LLM hosted at AAU Energy
 order: 2
 ---
