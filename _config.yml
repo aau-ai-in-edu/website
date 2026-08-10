@@ -1,4 +1,4 @@
-title: AI in Education at AAU Energy
+title: AI in Education
 description: Tools for AI in education
 baseurl: ""
 url: "https://ai-in-edu.energy.aau.dk"
@@ -58,5 +58,3 @@ nav:
     url: /#tools
   - title: For supervisors and teachers
     url: /for-supervisors-teachers
-  - title: More Information
-    url: /#more-information
