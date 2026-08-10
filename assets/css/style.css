@@ -345,6 +345,7 @@ section {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+align-items: center;
 }
 
 .more-info-text h2 {
@@ -355,6 +356,28 @@ section {
 .more-info-text p {
     color: var(--muted);
     margin-bottom: 1rem;
+}
+.more-info-lead {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.benefits-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+.benefits-list li::before {
+    content: "✓  ";
+    color: var(--aau-petroleum);
+    font-weight: 700;
+}
+.benefits-list li {
+    color: var(--muted);
+    font-size: 0.95rem;
 }
 
 .more-info-stats {

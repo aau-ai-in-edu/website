@@ -71,7 +71,13 @@ description: Open-source AI tools that enhance learning and teaching experiences
         <div class="more-info-grid">
             <div class="more-info-text">
                 <h2>{{ site.about.headline }}</h2>
+                <p class="more-info-lead">{{ site.about.lead }}</p>
                 <p>{{ site.about.body }}</p>
+                <ul class="benefits-list">
+                    {% for benefit in site.about.benefits %}
+                    <li>{{ benefit }}</li>
+                    {% endfor %}
+                </ul>
             </div>
             <div class="more-info-stats">
                 {% for stat in site.about.stats %}

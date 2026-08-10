@@ -12,8 +12,19 @@ hero:
 
 about:
   headline: Why AI in Education?
+  lead: >
+    AI can help students work faster and learn more effectively — both on its
+    own and alongside your own teaching.
   body: >
-    This site serves as an entry point for all tools and workshops related to AI for AAU Energy students.
+    We host state-of-the-art AI tools and models here at AAU Energy, so you can
+    use them without sharing data with external providers. The tools are free to
+    use, tailored to AAU Energy courses, and designed to work with your existing
+    workflows.
+  benefits:
+    - Free and open access for AAU Energy students
+    - Always locally hosted — your data stays at Aalborg University
+    - Tailored to AAU Energy courses and study curriculum
+    - Authored and maintained by people at AAU Energy
   stats:
     - number: "3"
       label: Tools and counting
