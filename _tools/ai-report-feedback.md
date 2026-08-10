@@ -4,7 +4,7 @@ title: Report commenter
 icon: "📝"
 tagline: Get thorough feedback in minutes that aligns with your supervisor's preferences
 github_path: ai-report-feedback
-link: https://example.com/ai-report-feedback
+link: https://apps.ai-in-edu.energy.aau.dk/report-commenter
 live: false
 accent: "#4406e0"
 features:
