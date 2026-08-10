@@ -1,4 +1,4 @@
-title: AI in Education
+title: AI in Education at AAU Energy
 description: Tools for AI in education
 baseurl: ""
 url: "https://ai-in-edu.energy.aau.dk"
@@ -9,11 +9,6 @@ hero:
   badge: "Free access for AAU Energy students · AI tools hosted locally at Aalborg University"
   headline: "AI in *Education* at AAU Energy"
   lead:
-
-tools_section:
-  headline: AI for AAU Energy students
-  lead: >
-    Get an overview of AI tools and workshops available for AAU Energy students.
 
 about:
   headline: Why AI in Education?

@@ -1,6 +1,5 @@
 ---
 layout: default
-title: AI in Education
 description: Open-source AI tools that enhance learning and teaching experiences
 ---
 
@@ -22,10 +21,6 @@ description: Open-source AI tools that enhance learning and teaching experiences
 <!-- Tools -->
 <section class="tools" id="tools">
     <div class="container">
-        <div class="section-header">
-            <h2>{{ site.tools_section.headline }}</h2>
-            <p>{{ site.tools_section.lead }}</p>
-        </div>
         <div class="tools-grid">
             {% assign sorted_tools = site.tools | sort: "order" %} {% for tool
             in sorted_tools %}
