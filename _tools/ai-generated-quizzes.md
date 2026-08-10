@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Quiz on course material
+title: Quizzer
 icon: "🗪"
 tagline: Speak to an AI-equivalent teacher about the course material and receive personalised feedback
 github_path: ai-generated-quizzes

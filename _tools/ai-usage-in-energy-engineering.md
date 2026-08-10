@@ -9,10 +9,12 @@ link: https://www.moodle.aau.dk/course/view.php?id=61554
 live: true
 accent: "#4406e0"
 features:
-  - Open-weight vs closed-weight models and why it matters
   - An up-to-date overview of the current LLM landscape and the newest models
-  - Practical walkthrough on finding a suitable LLM for your laptop's hardware specs and running it locally
-  - Connect programs such as Matlab/Python to your local LLM (or connect to state-of-the-art LLM models through API)
+  - Open-weight vs closed-weight models and why it matters
+  - Best practice to prompting and applying harnesses
+  - Practical walkthrough on how to run your own LLM
+  - A guide to find a suitable LLM for your laptop's hardware (and a introduction to huggingface)
+  - Connect tools such as Matlab/Python to your local LLM (or connect to state-of-the-art LLM models through API)
   - Learn how to access the LLM hosted at AAU Energy
 order: 2
 ---
