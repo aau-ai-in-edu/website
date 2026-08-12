@@ -16,6 +16,7 @@
     --aau-blue: #4406e0; /* Electric blue – CTAs */
     --aau-blue-light: #6a3df0; /* Lighter electric – hover/focus */
     --aau-teal: #2e8b8b; /* Progress / accents */
+    --aau-green: #2e8b57; /* Sea green – live / success */
 
     /* AAU grays */
     --aau-gray-light: #f1f1f3; /* Athens gray – surfaces */
@@ -345,9 +346,9 @@ section {
 }
 
 .btn-disabled {
-    background: var(--aau-gray-mid);
-    border-color: var(--aau-gray-mid);
-    color: var(--aau-gray-text);
+    background: #9ca3af;
+    border-color: #9ca3af;
+    color: #fff;
     cursor: not-allowed;
     opacity: 0.6;
 }
