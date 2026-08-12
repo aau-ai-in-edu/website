@@ -54,7 +54,5 @@ collections:
 
 # Navigation
 nav:
-  - title: For students
-    url: /#tools
   - title: For supervisors and teachers
     url: /for-supervisors-teachers

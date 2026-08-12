@@ -21,7 +21,7 @@
     <body>
         <header class="site-header">
             <div class="container">
-                <div class="site-logo">
+                <a href="{{ '/' | relative_url }}" class="site-logo">
                     <img
                         src="{{ '/assets/aau-logo.svg' | relative_url }}"
                         alt="Aalborg University"
@@ -29,7 +29,7 @@
                     />
                     <span aria-hidden="true" class="logo-divider"></span>
                     <span class="logo-text">AI in Education at AAU Energy</span>
-                </div>
+                </a>
                 <nav class="site-nav">
                     {% for item in site.nav %}
                     <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
