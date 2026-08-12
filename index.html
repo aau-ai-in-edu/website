@@ -51,11 +51,11 @@ description: Open-source AI tools that enhance learning and teaching experiences
                         style="{% if tool.type == 'workshop' %}background: var(--aau-green); border-color: var(--aau-green);{% else %}background: {{ tool.accent }}; border-color: {{ tool.accent }};{% endif %} color: #fff;"
                         target="_blank"
                         rel="noopener"
-                        >{% if tool.type == "workshop" %}Register for next workshop →{% else %}Access tool →{% endif %}</a
+                        >{% if tool.type == "workshop" %}Register for next workshop on Moodle →{% else %}Access tool →{% endif %}</a
                     >
                     {% else %}
                     <span class="btn btn-sm btn-disabled"
-                        >{% if tool.type == "workshop" %}Register for next workshop →{% else %}Open tool →{% endif %}</span
+                        >{% if tool.type == "workshop" %}Register for next workshop on Moodle →{% else %}Open tool →{% endif %}</span
                     >
                     {% endif %}
                 </div>

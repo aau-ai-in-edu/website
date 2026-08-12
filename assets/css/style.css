@@ -1,5 +1,5 @@
 /* ── AAU Design System (matches project-AI-assisted-feedback frontend) ── */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap");
 
 /* ── Reset & base ── */
 *,
@@ -47,6 +47,107 @@ body {
     flex-direction: column;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
+}
+
+/* Hide the vertical scrollbar while keeping its space reserved so the
+   header doesn't shift between pages of different heights */
+html {
+    scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+    display: none; /* Chrome / Edge / Safari */
+}
+
+/* ── Barlow weight utilities ── */
+.barlow-thin {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.barlow-extralight {
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+.barlow-light {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.barlow-regular {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.barlow-medium {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.barlow-semibold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.barlow-bold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.barlow-extrabold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.barlow-black {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.barlow-thin-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+.barlow-extralight-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+.barlow-light-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.barlow-regular-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.barlow-medium-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+.barlow-semibold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.barlow-bold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.barlow-extrabold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+.barlow-black-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
 main {
@@ -137,17 +238,26 @@ a:hover {
 .site-logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    font-family: "Montserrat", "Barlow", sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: -0.02em;
+    gap: 1rem;
+    font-size: 0.85em;
+    font-family: "Barlow", sans-serif;
+    font-weight: 750;
+    font-style: normal;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+.site-logo:hover {
     text-decoration: none;
 }
 .logo-icon {
     height: 2.75rem;
     width: auto;
+}
+.logo-text {
+    transform: translateY(-0.15em);
 }
 
 .logo-divider {
@@ -162,7 +272,11 @@ a:hover {
     gap: 1.5rem;
 }
 .site-nav a {
-    font-weight: 500;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     color: #fff;
 }
 .site-nav a:hover {
@@ -563,7 +677,6 @@ section {
 .prose p {
     color: var(--muted);
     margin-bottom: 1rem;
-    max-width: 680px;
 }
 .prose ol,
 .prose ul {

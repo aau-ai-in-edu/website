@@ -10,9 +10,6 @@ description: For supervisors and teachers
         <div class="tool-hero-heading">
             <div>
                 <h1>For supervisors and teachers</h1>
-                <p class="tool-hero-tagline">
-                    AI resources to help improve supervision and teaching
-                </p>
             </div>
         </div>
     </div>
