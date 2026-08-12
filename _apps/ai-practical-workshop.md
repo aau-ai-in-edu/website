@@ -16,5 +16,7 @@ features:
   - A guide to find a suitable LLM for your laptop's hardware (and a introduction to huggingface)
   - Connect tools such as Matlab/Python to your local LLM (or connect to state-of-the-art LLM models through API)
   - Learn how to access the LLM hosted at AAU Energy
-order: 2
+order: 3
+more_info: >
+  The practical workshop on AI is an introductory workshop to AI and LLMs. Please find more information in the Moodle room directly.
 ---

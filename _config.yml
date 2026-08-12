@@ -1,12 +1,12 @@
 title: AI in Education
-description: Tools for AI in education
+description: Apps for AI in education
 baseurl: ""
 url: "https://ai-in-edu.energy.aau.dk"
 github_url: https://github.com/jakobhaervig/ai-in-edu
 
 # Site copy
 hero:
-  badge: "Free access for AAU students · AI tools hosted locally at Aalborg University"
+  badge: "Free access for AAU students · AI apps hosted locally at Aalborg University"
   headline: "AI in *Education* at AAU Energy"
   lead:
 
@@ -16,8 +16,8 @@ about:
     AI can help students work faster and learn more effectively — both on its
     own and alongside your own teaching.
   body: >
-    We host state-of-the-art AI tools and models here at AAU Energy, so you can
-    use them without sharing data with external providers. The tools are free to
+    We host state-of-the-art AI apps and models here at AAU Energy, so you can
+    use them without sharing data with external providers. The apps are free to
     use, tailored to AAU Energy courses, and designed to work with your existing
     workflows.
   benefits:
@@ -27,14 +27,14 @@ about:
     - Authored and maintained by people at AAU Energy
   stats:
     - number: "3"
-      label: Tools and counting
+      label: Apps and counting
     - number: "1"
       label: Supervisors provided specialised reviewing styles
     - number: "100%"
       label: Locally hosted at Aalborg University
 cta:
   headline: Got an AI-related idea?
-  body: Get in touch and suggest your idea. We're always looking to add new tools to improve our education.
+  body: Get in touch and suggest your idea. We're always looking to add new apps to improve our education.
 
 footer:
   text: "Built with ❤️ for our students"
@@ -49,10 +49,8 @@ plugins:
 
 # Collections
 collections:
-  tools:
+  apps:
     output: false
 
 # Navigation
-nav:
-  - title: For supervisors and teachers
-    url: /for-supervisors-teachers
+nav: []

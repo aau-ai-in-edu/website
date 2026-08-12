@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<!-- Tool hero -->
-<section class="tool-hero">
+<!-- App hero -->
+<section class="app-hero">
     <div class="container">
-        <a href="{{ '/' | relative_url }}#tools" class="tool-back"
-            >← All tools</a
+        <a href="{{ '/' | relative_url }}#apps" class="app-back"
+            >← All apps</a
         >
-        <div class="tool-hero-heading">
-            <span class="tool-hero-icon">{{ page.icon }}</span>
+        <div class="app-hero-heading">
+            <span class="app-hero-icon">{{ page.icon }}</span>
             <div>
                 <h1>{{ page.title }}</h1>
-                <p class="tool-hero-tagline">{{ page.tagline }}</p>
+                <p class="app-hero-tagline">{{ page.tagline }}</p>
             </div>
         </div>
-        <div class="tool-hero-actions">
+        <div class="app-hero-actions">
             <a
                 href="{{ site.github_url }}/tree/main/{{ page.github_path }}"
                 class="btn btn-primary"
@@ -28,9 +28,9 @@ layout: default
 </section>
 
 <!-- Feature pills -->
-<section class="tool-features-bar">
+<section class="app-features-bar">
     <div class="container">
-        <ul class="tool-feature-pills">
+        <ul class="app-feature-pills">
             {% for feature in page.features %}
             <li>✓ {{ feature }}</li>
             {% endfor %}
@@ -39,7 +39,7 @@ layout: default
 </section>
 
 <!-- Markdown content -->
-<section class="tool-content">
+<section class="app-content">
     <div class="container">
         <div class="prose">{{ content }}</div>
     </div>

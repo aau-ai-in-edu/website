@@ -371,18 +371,18 @@ section {
     font-size: 1.05rem;
 }
 
-/* ── Tools grid ── */
-.tools {
+/* ── Apps grid ── */
+.apps {
     background: var(--bg);
 }
 
-.tools-grid {
+.apps-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
-.tool-card {
+.app-card {
     background: var(--surface);
     border: 1px solid var(--aau-gray-mid);
     border-radius: var(--radius);
@@ -397,13 +397,13 @@ section {
         box-shadow 0.2s;
     border-top: 4px solid var(--aau-gray-mid);
 }
-.tool-card:hover {
+.app-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(33, 26, 81, 0.12);
     border-top-color: var(--aau-blue);
 }
 
-.tool-card.live {
+.app-card.live {
     border-top-color: var(--aau-blue);
 }
 
@@ -425,38 +425,160 @@ section {
     background: #9ca3af;
 }
 
-.tool-icon {
+.app-icon {
     font-size: 2.5rem;
 }
-.tool-card h3 {
+.app-card h3 {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--aau-navy);
 }
-.tool-card p {
+.app-card p {
     color: var(--muted);
     font-size: 0.95rem;
 }
 
-.tool-features {
+.app-features {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
     flex: 1;
 }
-.tool-features li::before {
+.app-features li::before {
     content: "✓  ";
     color: var(--accent, var(--aau-blue));
     font-weight: 700;
 }
-.tool-features li {
+.app-features li {
     font-size: 0.9rem;
     color: var(--text);
 }
 
-.tool-footer {
+.app-footer {
     margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.app-footer-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.app-card .app-footer-actions {
+    margin-left: auto;
+}
+.app-card:not(:has(.btn-more-info)) .app-footer-actions {
+    margin-left: 0;
+    margin-left: auto;
+    width: 100%;
+}
+.app-card:not(:has(.btn-more-info)) .app-footer-actions .btn,
+.app-card:not(:has(.btn-more-info)) .app-footer-actions .btn-disabled {
+    margin-left: auto;
+}
+
+.btn-more-info {
+    background: transparent;
+    border: 1px solid var(--aau-navy);
+    color: var(--aau-navy);
+}
+.app-supervisor[hidden] {
+    display: none;
+}
+.btn-more-info:hover {
+    background: var(--aau-navy);
+    color: #fff;
+}
+
+/* ── More info modal ── */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.2s,
+        visibility 0.2s;
+}
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(33, 26, 81, 0.5);
+}
+.modal-content {
+    position: relative;
+    background: #fff;
+    color: var(--text);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 560px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2rem;
+}
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: var(--muted);
+    cursor: pointer;
+}
+.modal-close:hover {
+    color: var(--text);
+}
+.modal-title {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--aau-navy);
+    margin-bottom: 0.75rem;
+}
+.modal-body p {
+    color: var(--text);
+    line-height: 1.6;
+}
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: var(--radius-sm);
+}
+.modal-body ul,
+.modal-body ol {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+.modal-body h1,
+.modal-body h2,
+.modal-body h3,
+.modal-body h4 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    color: var(--aau-navy);
+    margin: 1.25rem 0 0.5rem;
+}
+.modal-body a {
+    color: var(--aau-blue);
 }
 
 .btn-disabled {
@@ -591,36 +713,36 @@ section {
     color: #fff;
 }
 
-/* ── Tool page ── */
-.tool-hero {
+/* ── App page ── */
+.app-hero {
     padding: 4rem 0 3rem;
     background: var(--bg);
     color: var(--text);
 }
 
-.tool-back {
+.app-back {
     color: var(--aau-blue);
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 1.5rem;
 }
-.tool-back:hover {
+.app-back:hover {
     color: var(--aau-blue-light);
     text-decoration: none;
 }
 
-.tool-hero-heading {
+.app-hero-heading {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.tool-hero-icon {
+.app-hero-icon {
     font-size: 3rem;
 }
 
-.tool-hero-heading h1 {
+.app-hero-heading h1 {
     font-size: 2.2rem;
     font-family: "Montserrat", "Barlow", sans-serif;
     font-weight: 800;
@@ -629,32 +751,32 @@ section {
     color: var(--text);
 }
 
-.tool-hero-tagline {
+.app-hero-tagline {
     color: var(--muted);
     font-size: 1.1rem;
     margin-top: 0.25rem;
 }
 
-.tool-hero-actions {
+.app-hero-actions {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
 }
 
-.tool-features-bar {
+.app-features-bar {
     padding: 1.5rem 0;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
 }
 
-.tool-feature-pills {
+.app-feature-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
     list-style: none;
 }
 
-.tool-feature-pills li {
+.app-feature-pills li {
     background: var(--bg);
     border: 1px solid var(--border);
     border-left: 3px solid var(--aau-blue);
@@ -664,11 +786,11 @@ section {
     color: var(--text);
 }
 
-.tool-content {
+.app-content {
     padding: 3rem 0;
 }
 
-/* ── Prose (tool pages) ── */
+/* ── Prose (app pages) ── */
 .prose h2 {
     font-size: 1.5rem;
     font-weight: 700;

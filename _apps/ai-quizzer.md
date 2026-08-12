@@ -12,4 +12,9 @@ features:
   - Asks follow up questions to make you reflect and improve
   - Locally-hosted at AAU to ensure confidential data stays confidential 
 order: 2
+more_info: >
+  Quizzer is a tool that helps students practice course material. Your supervisor provides course material such as slides, books, study curriculum and generates questions.
+  Students then sign in and get asked these questions along with AI-generated follow-up questions depending
+  on their answers. When the session ends the students will receive personal
+  recommendations for what and how to improve their knowledge level.
 ---

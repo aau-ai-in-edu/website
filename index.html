@@ -1,6 +1,6 @@
 ---
 layout: default
-description: Open-source AI tools that enhance learning and teaching experiences
+description: Open-source AI apps that enhance learning and teaching experiences
 ---
 
 <!-- Hero -->
@@ -18,46 +18,65 @@ description: Open-source AI tools that enhance learning and teaching experiences
     </div>
 </section>
 
-<!-- Tools -->
-<section class="tools" id="tools">
+<!-- Apps -->
+<section class="apps" id="apps">
     <div class="container">
-        <div class="tools-grid">
-            {% assign sorted_tools = site.tools | sort: "order" %} {% for tool
-            in sorted_tools %}
+        <div class="apps-grid">
+            {% assign sorted_apps = site.apps | sort: "order" %} {% for app
+            in sorted_apps %}
             <div
-                class="tool-card{% if tool.live %} live{% else %} not-live{% endif %}"
-                style="border-top-color: {{ tool.accent }};"
+                class="app-card{% if app.live %} live{% else %} not-live{% endif %}"
+                style="border-top-color: {{ app.accent }};"
             >
-                {% unless tool.type == "workshop" %}
+                {% unless app.type == "workshop" %}
                 <div
-                    class="status-label {% if tool.live %}status-live{% else %}status-not-live{% endif %}"
+                    class="status-label {% if app.live %}status-live{% else %}status-not-live{% endif %}"
                 >
-                    {% if tool.live %}🟢 Live{% else %}🔴 Not live{% endif %}
+                    {% if app.live %}🟢 Live{% else %}🔴 Not live{% endif %}
                 </div>
                 {% endunless %}
-                <div class="tool-icon">{{ tool.icon }}</div>
-                <h3>{{ tool.title }}</h3>
-                <p>{{ tool.tagline }}</p>
-                <ul class="tool-features">
-                    {% for feature in tool.features %}
-                    <li style="--accent: {{ tool.accent }};">{{ feature }}</li>
+                <div class="app-icon">{{ app.icon }}</div>
+                <h3>{{ app.title }}</h3>
+                <p>{{ app.tagline }}</p>
+                <ul class="app-features">
+                    {% for feature in app.features %}
+                    <li style="--accent: {{ app.accent }};">{{ feature }}</li>
                     {% endfor %}
                 </ul>
-                <div class="tool-footer">
-                    {% if tool.live %}
+                {% if app.more_info %}
+                <div class="app-supervisor" hidden>
+                    <strong>For supervisors &amp; teachers</strong>
+                    <div class="app-supervisor-body">
+                        {{ app.more_info | markdownify }}
+                    </div>
+                </div>
+                {% endif %}
+                <div class="app-footer">
+                    {% if app.more_info and app.type != "workshop" %}
+                    <button
+                        type="button"
+                        class="btn btn-sm btn-more-info"
+                        data-app-title="{{ app.title }}"
+                    >
+                        More info
+                    </button>
+                    {% endif %}
+                    <div class="app-footer-actions">
+                    {% if app.live %}
                     <a
-                        href="{{ tool.link }}"
+                        href="{{ app.link }}"
                         class="btn btn-sm"
-                        style="{% if tool.type == 'workshop' %}background: var(--aau-green); border-color: var(--aau-green);{% else %}background: {{ tool.accent }}; border-color: {{ tool.accent }};{% endif %} color: #fff;"
+                        style="{% if app.type == 'workshop' %}background: var(--aau-green); border-color: var(--aau-green);{% else %}background: {{ app.accent }}; border-color: {{ app.accent }};{% endif %} color: #fff;"
                         target="_blank"
                         rel="noopener"
-                        >{% if tool.type == "workshop" %}Register for next workshop on Moodle →{% else %}Access tool →{% endif %}</a
+                        >{% if app.type == "workshop" %}Register for next workshop on Moodle →{% else %}Access app →{% endif %}</a
                     >
                     {% else %}
                     <span class="btn btn-sm btn-disabled"
-                        >{% if tool.type == "workshop" %}Register for next workshop on Moodle →{% else %}Open tool →{% endif %}</span
+                        >{% if app.type == "workshop" %}Register for next workshop on Moodle →{% else %}Open app →{% endif %}</span
                     >
                     {% endif %}
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -104,3 +123,20 @@ description: Open-source AI tools that enhance learning and teaching experiences
         >
     </div>
 </section>
+
+<!-- More info modal -->
+<div class="modal" id="more-info-modal" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button
+            type="button"
+            class="modal-close"
+            data-modal-close
+            aria-label="Close"
+        >
+            &times;
+        </button>
+        <h2 id="modal-title" class="modal-title"></h2>
+        <div class="modal-body"></div>
+    </div>
+</div>

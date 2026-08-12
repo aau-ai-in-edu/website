@@ -132,34 +132,36 @@ website/
 ├── _config.yml          # Site settings, navigation, hero copy, stats
 ├── _layouts/
 │   ├── default.html     # Base layout (header, footer, nav)
-│   └── tool.html        # Individual tool page layout
-├── _tools/              # One .md file per tool (Jekyll collection)
-│   ├── ai-assisted-feedback.md
-│   ├── ai-generated-quizzes.md
-│   └── code-evaluation.md
+│   └── app.html        # Individual app page layout
+├── _apps/              # One .md file per app (Jekyll collection)
+│   ├── ai-quizzer.md
+│   ├── ai-report-commenter.md
+│   └── ai-practical-workshop.md
 ├── assets/
-│   └── css/
-│       └── style.css    # All site styles
-├── index.html           # Home page (hero + tools grid + about + CTA)
+│   ├── css/
+│   │   └── style.css    # All site styles
+│   └── js/
+│       └── main.js      # Modal / interactive behaviour
+├── index.html           # Home page (hero + apps grid + about + CTA)
 ├── 404.html             # Custom 404 page
 └── Gemfile              # Ruby dependencies
 ```
 
 ---
 
-## Adding a new tool
+## Adding a new app
 
-1. Create a new file in `_tools/`, e.g. `_tools/my-new-tool.md`.
+1. Create a new file in `_apps/`, e.g. `_apps/my-new-app.md`.
 2. Add the front matter:
 
 ```yaml
 ---
 layout: default
-title: My New Tool
+title: My New App
 icon: "🔧"
-tagline: One-line description of what the tool does
-github_path: project-my-new-tool
-link: https://example.com/my-tool
+tagline: One-line description of what the app does
+github_path: project-my-new-app
+link: https://example.com/my-app
 live: false
 accent: "#e74b65"
 order: 4
@@ -176,11 +178,12 @@ features:
 | `icon` | Emoji shown at the top of the card |
 | `tagline` | Short subtitle under the title |
 | `github_path` | Folder name in the repo root (used for GitHub links) |
-| `link` | URL the "Open tool →" button points to |
+| `link` | URL the "Open app →" button points to |
 | `live` | `true` shows a green **Live** badge; `false` shows a grey **Not live** badge |
 | `accent` | Hex colour used for the card's top border and feature list ticks |
-| `order` | Controls the display order in the tools grid (lower = first) |
+| `order` | Controls the display order in the apps grid (lower = first) |
 | `features` | Bullet list of highlights shown on the card |
+| `more_info` | Longer text shown in the "More info" pop-up modal |
 
 3. Restart `jekyll serve` (or let live reload pick it up) — the card appears automatically on the home page.
 
