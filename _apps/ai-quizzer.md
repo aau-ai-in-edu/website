@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Quizzer
-icon: "🗪"
+icon: "💬🗨️"
 tagline: Speak to an AI-equivalent teacher about the course material and receive personalised feedback
 github_path: ai-generated-quizzes
 link: https://apps.ai-in-edu.energy.aau.dk/quizzer
