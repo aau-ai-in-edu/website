@@ -3,7 +3,7 @@ layout: default
 title: Practical workshop on AI for Engineering Students
 type: workshop
 icon: "✨"
-tagline: Introductory workshop to AI and LLMs. We will do a practical walkthrough on setting up AI for daily use.
+tagline: Introductory workshop on Large Language Models (LLMs) to help engineering students make efficient use of AI in their daily work and prepare for the future.
 github_path: ai-introduction
 link: https://www.moodle.aau.dk/course/view.php?id=61554
 live: true
