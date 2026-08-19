@@ -10,7 +10,7 @@ accent: "#4406e0"
 features:
   - Quizzes are adapted to your specific course material and study curriculum
   - Asks follow up questions to make you reflect and improve
-  - Locally-hosted at AAU to ensure confidential data stays confidential 
+  - Hosted locally at AAU to ensure confidential data stays confidential 
 order: 2
 more_info: >
   Quizzer is a tool that helps students practice course material. Your supervisor provides course material such as slides, books, study curriculum and generates questions.
