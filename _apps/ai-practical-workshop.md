@@ -12,7 +12,7 @@ features:
   - An up-to-date overview of the current LLM landscape and the newest models
   - Open-weight vs closed-weight models and why it matters
   - Introduction to data sovereignty
-  - Practical walkthrough on how to run your own LLM on your own hardware (intro to huggingface, llama.cpp and Ollama)
+  - Practical walkthrough on how to run your own LLM on your own hardware (intro to Hugging Face, llama.cpp and Ollama)
   - Connect your favourite tools to either a local LLM, AAU-hosted LLMs or external LLMs (free or paid options)
   - Best practices to prompting and applying harnesses
 order: 3
