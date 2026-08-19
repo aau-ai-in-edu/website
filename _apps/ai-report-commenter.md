@@ -10,7 +10,8 @@ accent: "#4406e0"
 features:
   - Upload a .pdf and receive feedback
   - Choose your supervisor to get specialised feedback
-  - No waiting time
+  - Choose which kind of feedback you would like
+  - Receive feedback in minutes - no more waiting for busy supervisors
   - More time for technical discussions with your supervisor
   - Hosted locally at AAU to ensure confidential data stays confidential
 order: 1
