@@ -614,6 +614,12 @@ section {
     color: var(--muted);
     margin-bottom: 1rem;
 }
+.more-info-text p a {
+    color: var(--aau-navy);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
 .more-info-lead {
     font-size: 1.15rem;
     font-weight: 600;
@@ -635,6 +641,15 @@ section {
 .benefits-list li {
     color: var(--muted);
     font-size: 0.95rem;
+}
+.benefits-list code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85em;
+    background: var(--aau-gray-light);
+    border: 1px solid var(--aau-gray-mid);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+    color: var(--text);
 }
 
 .more-info-stats {
