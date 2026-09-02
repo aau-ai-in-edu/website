@@ -18,7 +18,7 @@ about:
   lead: >
     AI can help students learn more effectively if used with care. Besides the Copilot offered by AAU, we at AAU Energy host our own LLMs.
   body: >
-    Should you wish to include AI in your teaching, you can request API access to various LLMS for you and your students. In this way, you can integrate AI access directly in the tools you use (e.g. Python or MATLAB). Currently, we are hosting:
+    Should you wish to include AI in your teaching, you can request API access to various LLMS for you and your students. In this way, you can integrate LLM access directly in the tools you use for teaching (e.g. MATLAB or Python). Currently, we are hosting:
   benefits:
     - "[`deepseek-ai/DeepSeek-V4-Flash-0731`](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731)"
     - "[`Qwen/Qwen3.8-27B`](https://huggingface.co/Qwen/Qwen3.8-27B)"
