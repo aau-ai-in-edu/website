@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Practical workshop on AI for Engineering Students
+title: Practical workshop on AI in Engineering Workflows
 type: workshop
 icon: "✨"
 tagline: Introductory workshop on Large Language Models (LLMs) to help engineering students make efficient use of AI in their daily work and prepare for the future.
