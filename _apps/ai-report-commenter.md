@@ -11,7 +11,7 @@ features:
   - Upload a .pdf and receive feedback
   - Choose your supervisor to get specialised feedback
   - Choose which kind of feedback you would like
-  - Receive feedback in minutes - no more waiting for busy supervisors
+  - Receive feedback in minutes
   - More time for technical discussions with your supervisor
   - Hosted locally at AAU to ensure confidential data stays confidential
 order: 1
